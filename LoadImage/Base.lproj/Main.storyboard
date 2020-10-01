@@ -23,8 +23,9 @@
                                 <rect key="frame" x="20" y="508" width="280" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5g-3J-A6T">
-                                        <rect key="frame" x="0.0" y="0.0" width="130" height="40"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="40"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <state key="normal" title="HTTPS">
                                             <color key="titleColor" red="0.8559491038" green="0.13103273509999999" blue="0.1528710127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -32,9 +33,20 @@
                                             <action selector="loadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWN-wk-rGB"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMR-Fi-9Iq" userLabel="Rod Data">
+                                        <rect key="frame" x="100" y="0.0" width="80" height="40"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <state key="normal" title="///">
+                                            <color key="titleColor" systemColor="labelColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="loadImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="szI-CM-hQH"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fGS-t0-Uod">
-                                        <rect key="frame" x="150" y="0.0" width="130" height="40"/>
+                                        <rect key="frame" x="200" y="0.0" width="80" height="40"/>
                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                         <state key="normal" title="Non HTTPS">
                                             <color key="titleColor" red="0.8559491038" green="0.13103273509999999" blue="0.1528710127" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
@@ -77,6 +89,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

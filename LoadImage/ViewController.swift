@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     var athens = "https://cdn.pixabay.com/photo/2016/12/08/13/42/athens-1891719_1280.jpg"
     var xanthos = "http://bronze-age-towns.com/files/2020/09/entree-du-theatre-lycien-de-xanthos-300x166.jpg"
+    var rodData = "https://www.roddata.net/web_images/LogoRDC_Nad.png"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,10 +28,13 @@ class ViewController: UIViewController {
 
     
     @IBAction func loadImage(_ sender: UIButton) {
-        if sender.tag == 0 {
+        switch sender.tag {
+        case 0:
             requestImageFrom(athens)
-        } else {
+        case 1:
             requestImageFrom(xanthos)
+        default:
+            requestImageFrom(rodData)
         }
     }
     
